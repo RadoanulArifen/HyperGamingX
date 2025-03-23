@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperGamingX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div id="particles-js"></div>
+    
+    <header>
+        <div class="logo">
+            <span class="neon-text">Hyper</span><span class="pulse-text">GamingX</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link" data-sound="nav-hover">Home</a></li>
+                <li><a href="#games" class="nav-link" data-sound="nav-hover">Games</a></li>
+                <li><a href="#leaderboard" class="nav-link" data-sound="nav-hover">Leaderboard</a></li>
+                <li><a href="#streams" class="nav-link" data-sound="nav-hover">Streams</a></li>
+                <li><a href="#profile" class="nav-link" data-sound="nav-hover">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn-login" data-sound="button-click">Login</button>
+            <button class="btn-signup" data-sound="button-click">Sign Up</button>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="cityscape"></div>
+            <div class="hero-content">
+                <h1 class="glitch" data-text="ENTER THE FUTURE OF GAMING">ENTER THE FUTURE OF GAMING</h1>
+                <p>Experience next-gen gameplay in a world where reality meets digital immersion</p>
+                <button class="btn-primary" data-sound="button-click">EXPLORE NOW</button>
+            </div>
+        </section>
+
+        <section id="games" class="featured-games">
+            <div class="section-header">
+                <h2>FEATURED GAMES</h2>
+                <div class="neon-line"></div>
+            </div>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="./image/Cyber Nexus.png?height=300&width=400" alt="Cyber Nexus">
+                    </div>
+                    <div class="game-info">
+                        <h3>Cyber Nexus</h3>
+                        <div class="game-meta">
+                            <span class="game-rating">9.8</span>
+                            <span class="game-genre">RPG</span>
+                        </div>
+                        <p>Dive into a dystopian future where neural implants and corporate warfare shap.</p>
+                        <button class="btn-play" data-sound="button-click">PLAY NOW</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="./image/Neon Drift.jpg?height=300&width=400" alt="Neon Drift">
+                    </div>
+                    <div class="game-info">
+                        <h3>Neon Drift</h3>
+                        <div class="game-meta">
+                            <span class="game-rating">9.5</span>
+                            <span class="game-genre">Racing</span>
+                        </div>
+                        <p>Race through glowing cityscapes with quantum-powered vehicles that defy physics.</p>
+                        <button class="btn-play" data-sound="button-click">PLAY NOW</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="./image/Pulse Fighters.jpg?height=300&width=400" alt="Pulse Fighters">
+                    </div>
+                    <div class="game-info">
+                        <h3>Pulse Fighters</h3>
+                        <div class="game-meta">
+                            <span class="game-rating">9.7</span>
+                            <span class="game-genre">Fighting</span>
+                        </div>
+                        <p>Master the art of combat with augmented warriors in this high-octane fighting game.</p>
+                        <button class="btn-play" data-sound="button-click">PLAY NOW</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="./image/Synth Worlds.jpg?height=300&width=400" alt="Synth Worlds">
+                    </div>
+                    <div class="game-info">
+                        <h3>Synth Worlds</h3>
+                        <div class="game-meta">
+                            <span class="game-rating">9.6</span>
+                            <span class="game-genre">Adventure</span>
+                        </div>
+                        <p>Explore procedurally generated planets with unique ecosystems and alien technologies.</p>
+                        <button class="btn-play" data-sound="button-click">PLAY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="leaderboard" class="leaderboard">
+            <div class="section-header">
+                <h2>GLOBAL LEADERBOARD</h2>
+                <div class="neon-line"></div>
+            </div>
+            <div class="glass-panel">
+                <div class="leaderboard-filters">
+                    <button class="filter-btn active" data-filter="all" data-sound="button-click">All Games</button>
+                    <button class="filter-btn" data-filter="fps" data-sound="button-click">FPS</button>
+                    <button class="filter-btn" data-filter="racing" data-sound="button-click">Racing</button>
+                    <button class="filter-btn" data-filter="rpg" data-sound="button-click">RPG</button>
+                </div>
+                <div class="leaderboard-table">
+                    <div class="leaderboard-header">
+                        <div class="rank">Rank</div>
+                        <div class="player">Player</div>
+                        <div class="game">Game</div>
+                        <div class="score">Score</div>
+                    </div>
+                    <div class="leaderboard-body">
+                        <div class="leaderboard-row">
+                            <div class="rank">1</div>
+                            <div class="player">
+                                <img src="./image/CyberNinja.jpg?height=40&width=40" alt="Player avatar" class="player-avatar">
+                                <span>NeonSlayer</span>
+                            </div>
+                            <div class="game">Cyber Nexus</div>
+                            <div class="score">98,547</div>
+                        </div>
+                        <div class="leaderboard-row">
+                            <div class="rank">2</div>
+                            <div class="player">
+                                <img src="./image/zoro3.jpg?height=40&width=40" alt="Player avatar" class="player-avatar">
+                                <span>QuantumDrift</span>
+                            </div>
+                            <div class="game">Neon Drift</div>
+                            <div class="score">95,321</div>
+                        </div>
+                        <div class="leaderboard-row">
+                            <div class="rank">3</div>
+                            <div class="player">
+                                <img src="./image/CyberNinja.jpg?height=40&width=40" alt="Player avatar" class="player-avatar">
+                                <span>SynthWave</span>
+                            </div>
+                            <div class="game">Pulse Fighters</div>
+                            <div class="score">92,876</div>
+                        </div>
+                        <div class="leaderboard-row">
+                            <div class="rank">4</div>
+                            <div class="player">
+                                <img src="./image/zoro3.jpg?height=40&width=40" alt="Player avatar" class="player-avatar">
+                                <span>CyberPunk2099</span>
+                            </div>
+                            <div class="game">Synth Worlds</div>
+                            <div class="score">91,432</div>
+                        </div>
+                        <div class="leaderboard-row">
+                            <div class="rank">5</div>
+                            <div class="player">
+                                <img src="./image/CyberNinja.jpg?height=40&width=40" alt="Player avatar" class="player-avatar">
+                                <span>NeonBlade</span>
+                            </div>
+                            <div class="game">Cyber Nexus</div>
+                            <div class="score">89,754</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="live-updates">
+                    <div class="pulse-icon"></div>
+                    <span>Live Updates</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="streams" class="live-streams">
+            <div class="section-header">
+                <h2>LIVE STREAMS</h2>
+                <div class="neon-line"></div>
+            </div>
+            <div class="streams-container">
+                <div class="stream-card featured">
+                    <div class="stream-thumbnail">
+                        <img src="./image/LIVE STREAMS.jpg?height=400&width=700" alt="Featured stream">
+                        <div class="live-badge">LIVE</div>
+                        <div class="viewers">12.5K viewers</div>
+                    </div>
+                    <div class="stream-info">
+                        <div class="streamer-info">
+                            <img src="./image/CyberNinja.jpg?height=50&width=50" alt="Streamer avatar" class="streamer-avatar">
+                            <div>
+                                <h3>CyberNinja</h3>
+                                <p>Cyber Nexus - Championship Finals</p>
+                            </div>
+                        </div>
+                        <button class="btn-watch" data-sound="button-click">WATCH NOW</button>
+                    </div>
+                </div>
+                <div class="stream-grid">
+                    <div class="stream-card">
+                        <div class="stream-thumbnail">
+                            <img src="./image/NeonRider.jpg?height=200&width=350" alt="Stream">
+                            <div class="live-badge">LIVE</div>
+                            <div class="viewers">8.3K viewers</div>
+                        </div>
+                        <div class="stream-info">
+                            <div class="streamer-info">
+                                <img src="./image/zoro2.jpg?height=40&width=40" alt="Streamer avatar" class="streamer-avatar">
+                                <div>
+                                    <h3>NeonRider</h3>
+                                    <p>Neon Drift - Speed Run</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stream-card">
+                        <div class="stream-thumbnail">
+                            <img src="./image/zoro.jpg?height=200&width=350" alt="Stream">
+                            <div class="live-badge">LIVE</div>
+                            <div class="viewers">6.7K viewers</div>
+                        </div>
+                        <div class="stream-info">
+                            <div class="streamer-info">
+                                <img src="./image/zoro2.jpg?height=40&width=40" alt="Streamer avatar" class="streamer-avatar">
+                                <div>
+                                    <h3>SynthQueen</h3>
+                                    <p>Synth Worlds - First Look</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stream-card">
+                        <div class="stream-thumbnail">
+                            <img src="./image/NeonRider.jpg?height=200&width=350" alt="Stream">
+                            <div class="live-badge">LIVE</div>
+                            <div class="viewers">5.2K viewers</div>
+                        </div>
+                        <div class="stream-info">
+                            <div class="streamer-info">
+                                <img src="./image/zoro2.jpg?height=40&width=40" alt="Streamer avatar" class="streamer-avatar">
+                                <div>
+                                    <h3>PulseKing</h3>
+                                    <p>Pulse Fighters - Tournament</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stream-card">
+                        <div class="stream-thumbnail">
+                            <img src="./image/zoro.jpg?height=200&width=350" alt="Stream">
+                            <div class="live-badge">LIVE</div>
+                            <div class="viewers">4.8K viewers</div>
+                        </div>
+                        <div class="stream-info">
+                            <div class="streamer-info">
+                                <img src="./image/zoro2.jpg?height=40&width=40" alt="Streamer avatar" class="streamer-avatar">
+                                <div>
+                                    <h3>CyberWitch</h3>
+                                    <p>Cyber Nexus - Story Mode</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile" class="profile-section">
+            <div class="section-header">
+                <h2>YOUR PROFILE</h2>
+                <div class="neon-line"></div>
+            </div>
+            <div class="profile-container">
+                <div class="profile-sidebar glass-panel">
+                    <div class="profile-avatar">
+                        <img src="./image/zoro3.jpg?height=150&width=150" alt="User avatar">
+                        <div class="avatar-level">LVL 42</div>
+                        <button class="btn-edit-avatar" data-sound="button-click">
+                            <span>Edit</span>
+                        </button>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="username">NeonRaider</h3>
+                        <div class="user-rank">Cyber Legend</div>
+                        <div class="user-stats">
+                            <div class="stat">
+                                <span class="stat-value">247</span>
+                                <span class="stat-label">Games</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">18.5K</span>
+                                <span class="stat-label">Points</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">89</span>
+                                <span class="stat-label">Wins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-content">
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="achievements" data-sound="button-click">Achievements</button>
+                        <button class="tab-btn" data-tab="badges" data-sound="button-click">Badges</button>
+                        <button class="tab-btn" data-tab="history" data-sound="button-click">Game History</button>
+                        <button class="tab-btn" data-tab="friends" data-sound="button-click">Friends</button>
+                    </div>
+                    <div class="tab-content glass-panel">
+                        <div class="tab-pane active" id="achievements">
+                            <div class="achievements-grid">
+                                <div class="achievement-card">
+                                    <div class="achievement-icon">
+                                        <img src="./image/Cyber Master.png?height=60&width=60" alt="Achievement icon">
+                                    </div>
+                                    <div class="achievement-info">
+                                        <h4>Cyber Master</h4>
+                                        <p>Complete all main missions in Cyber Nexus</p>
+                                        <div class="achievement-progress">
+                                            <div class="progress-bar" style="width: 100%"></div>
+                                            <span>100%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="achievement-card">
+                                    <div class="achievement-icon">
+                                        <img src="./image/Speed Demon.png?height=60&width=60" alt="Achievement icon">
+                                    </div>
+                                    <div class="achievement-info">
+                                        <h4>Speed Demon</h4>
+                                        <p>Win 50 races in Neon Drift</p>
+                                        <div class="achievement-progress">
+                                            <div class="progress-bar" style="width: 78%"></div>
+                                            <span>39/50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="achievement-card">
+                                    <div class="achievement-icon">
+                                        <img src="./image/Combo King.png?height=60&width=60" alt="Achievement icon">
+                                    </div>
+                                    <div class="achievement-info">
+                                        <h4>Combo King</h4>
+                                        <p>Perform a 100-hit combo in Pulse Fighters</p>
+                                        <div class="achievement-progress">
+                                            <div class="progress-bar" style="width: 65%"></div>
+                                            <span>65/100</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="achievement-card">
+                                    <div class="achievement-icon">
+                                        <img src="./image/Explorer.png?height=60&width=60" alt="Achievement icon">
+                                    </div>
+                                    <div class="achievement-info">
+                                        <h4>Explorer</h4>
+                                        <p>Discover all regions in Synth Worlds</p>
+                                        <div class="achievement-progress">
+                                            <div class="progress-bar" style="width: 45%"></div>
+                                            <span>9/20</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="neon-text">Hyper</span><span class="pulse-text">GamingX</span>
+                <p>The future of gaming starts here</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#leaderboard">Leaderboard</a></li>
+                        <li><a href="#streams">Streams</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Tournaments</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Connected</h4>
+                <p>Subscribe to our newsletter for the latest updates</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button class="btn-subscribe" data-sound="button-click">Subscribe</button>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><span class="sr-only">Twitter</span></a>
+                    <a href="#" class="social-icon"><span class="sr-only">Discord</span></a>
+                    <a href="#" class="social-icon"><span class="sr-only">Twitch</span></a>
+                    <a href="#" class="social-icon"><span class="sr-only">YouTube</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HyperGamingX Gaming. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
